@@ -1,0 +1,172 @@
+🎨 TON PORTFOLIO — CONCEPT GLOBAL
+
+👉 Identité :
+
+Moderne
+Technique
+Minimaliste mais puissant
+Ambiance “ingénieur + développeur”
+
+👉 Objectif :
+
+Montrer que tu es un développeur web sérieux
+donner une impression de cerveau technique avancé
+🌑 🎯 DESIGN GLOBAL
+🎨 Couleurs
+Fond : noir profond (#0a0a0a)
+Secondaire : gris foncé
+Accent :
+bleu électrique 🔵
+ou violet néon 🟣
+
+👉 Ça donne un effet :
+tech / hacker / ingénieur moderne
+
+🔤 Polices (TRÈS IMPORTANT)
+
+👉 Combo parfait :
+
+Titres :
+Orbitron → effet futuriste/technique
+Texte :
+Inter → lisible, pro
+Option bonus :
+JetBrains Mono → pour les éléments techniques
+
+👉 Résultat :
+💻 Web + 🔌 Électronique = cohérent
+
+✨ Animations
+
+👉 Douces et intelligentes (pas trop flashy)
+
+Apparition au scroll (fade + slide)
+Hover sur les boutons (glow effect)
+Curseur personnalisé (option 🔥)
+Background animé léger (grille ou particules)
+🧠 STRUCTURE COMPLÈTE
+🏠 1. HERO (PAGE D’ACCUEIL)
+
+👉 Plein écran, impact direct
+
+Contenu :
+
+Sergio Ahouangonou
+Développeur Web Full Stack
+
+Je conçois des applications web modernes, performantes et évolutives.
+
+👉 Ligne bonus :
+
+Profil technique avec une base en systèmes électroniques et embarqués
+
+🎯 Boutons :
+
+Voir mes projets
+Me contacter
+
+💡 Animation :
+
+Texte qui apparaît progressivement
+Effet “typing” léger
+👨‍💻 2. À PROPOS
+
+👉 Section storytelling
+
+Texte optimisé :
+
+Je suis développeur web passionné par la création d’applications modernes avec JavaScript, Node.js et Laravel.
+
+Mon parcours en électrotechnique m’a permis de développer une forte capacité d’analyse et une compréhension des systèmes techniques, que j’applique aujourd’hui dans le développement logiciel.
+
+Actuellement en alternance, je continue de renforcer mes compétences et de travailler sur des projets concrets.
+
+💡 Design :
+
+Image ou avatar
+Texte à gauche, image à droite
+Animation au scroll
+🛠️ 3. COMPÉTENCES
+
+👉 Design en cartes modernes
+
+💻 Développement Web
+HTML, CSS, JavaScript
+React, Vue.js
+Node.js, Laravel
+TypeScript
+⚙️ Compétences techniques
+Arduino
+Microcontrôleurs
+Électricité industrielle
+🎨 Outils
+Git, VPS
+Figma, Canva
+
+💡 Animation :
+
+Hover = glow + légère élévation
+🚀 4. PROJETS (ZONE CLÉ)
+
+👉 Grille moderne
+
+Chaque carte :
+
+Image preview
+Nom
+Tech
+Boutons :
+Live
+GitHub
+
+💡 Animation :
+
+Zoom au hover
+Overlay sombre + infos
+⚡ 5. SERVICES (IMPORTANT POUR FREELANCE)
+
+👉 Cartes simples :
+
+🌐 Développement Web
+
+Sites modernes, applications web
+
+🚀 Déploiement
+
+Mise en ligne, VPS, performance
+
+⚡ Solutions techniques
+
+Automatisation simple / logique technique
+
+💡 Objectif :
+👉 Faire comprendre que tu peux être payé
+
+📞 6. CONTACT
+
+👉 Simple + efficace
+
+Email
+WhatsApp (très important 🔥)
+Formulaire
+
+💡 Animation :
+
+Bouton glow
+Feedback quand on envoie
+🔌 SECTION BONUS (TA DIFFÉRENCE)
+
+👉 Petite section stylée :
+
+“Approche technique”
+
+Grâce à mon background en électrotechnique, j’aborde chaque projet avec une logique d’ingénierie, en mettant l’accent sur la fiabilité, la performance et la structure des systèmes.
+
+👉 Court = puissant
+
+🔥 DÉTAIL QUI FAIT PRO
+
+👉 Ajoute en bas :
+
+“Disponible pour freelance”
+Petit badge animé
