@@ -1,11 +1,17 @@
 import { motion } from "framer-motion";
-import { Globe, Cpu, Wrench } from "lucide-react";
+import { Globe, Cpu, Wrench, Server } from "lucide-react";
 
 const skills = [
   {
     category: "Développement Web",
     icon: <Globe className="w-5 h-5" />,
-    items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Vue.js", "Node.js", "Laravel"],
+    items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Vue.js"],
+    color: "primary",
+  },
+  {
+    category: "Backend",
+    icon: <Server className="w-5 h-5" />,
+    items: ["Node.js", "Laravel", "API REST", "Bases de données"],
     color: "primary",
   },
   {

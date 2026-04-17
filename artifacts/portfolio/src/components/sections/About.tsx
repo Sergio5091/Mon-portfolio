@@ -3,10 +3,10 @@ import { Code2, Cpu, Zap, BookOpen } from "lucide-react";
 import { useRef } from "react";
 
 const stats = [
-  { label: "Projets réalisés", value: "12+" },
+  { label: "Projets réalisés", value: "10+" },
   { label: "Technologies maîtrisées", value: "15+" },
-  { label: "Mois d'alternance", value: "18+" },
-  { label: "Commits GitHub", value: "500+" },
+  { label: "Mois d'alternance", value: "5+" },
+  { label: "Commits GitHub", value: "400+" },
 ];
 
 function TiltCard({ children, className }: { children: React.ReactNode; className?: string }) {
@@ -72,8 +72,8 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-muted-foreground leading-relaxed text-base">
-              Je suis développeur web passionné par la création d'applications modernes avec{" "}
-              <span className="text-primary font-mono font-semibold">JavaScript, Node.js et Laravel</span>.
+              Je suis développeur web passionné par la créatin des applications {" "}
+              <span className="text-primary font-mono font-semibold"> modernes, performantes et intuitives</span>.
             </p>
             <p className="text-muted-foreground leading-relaxed text-base">
               Mon parcours en{" "}
@@ -94,9 +94,9 @@ export default function About() {
             >
               {[
                 { icon: <Code2 className="w-4 h-4" />, label: "Web Dev" },
-                { icon: <Cpu className="w-4 h-4" />, label: "Hardware" },
+                { icon: <Cpu className="w-4 h-4" />, label: "Technologies" },
                 { icon: <Zap className="w-4 h-4" />, label: "Performance" },
-                { icon: <BookOpen className="w-4 h-4" />, label: "En alternance" },
+                { icon: <BookOpen className="w-4 h-4" />, label: "En alternance..." },
               ].map((item, i) => (
                 <motion.div
                   key={i}
@@ -117,18 +117,8 @@ export default function About() {
               <div className="relative h-full w-full rounded-2xl border border-primary/25 bg-secondary/60 backdrop-blur-sm overflow-hidden flex items-center justify-center glow-box">
                 <div className="absolute inset-0 bg-grid opacity-20" />
                 {/* Geometric avatar */}
-                <svg viewBox="0 0 200 200" className="w-40 h-40 text-primary/40" fill="none">
-                  <circle cx="100" cy="75" r="35" stroke="currentColor" strokeWidth="1.5" />
-                  <path d="M40 180 Q100 120 160 180" stroke="currentColor" strokeWidth="1.5" fill="none" />
-                  <rect x="20" y="20" width="30" height="2" fill="currentColor" opacity="0.4" />
-                  <rect x="150" y="20" width="30" height="2" fill="currentColor" opacity="0.4" />
-                  <rect x="20" y="178" width="30" height="2" fill="currentColor" opacity="0.4" />
-                  <rect x="150" y="178" width="30" height="2" fill="currentColor" opacity="0.4" />
-                  <rect x="20" y="20" width="2" height="30" fill="currentColor" opacity="0.4" />
-                  <rect x="178" y="20" width="2" height="30" fill="currentColor" opacity="0.4" />
-                  <rect x="20" y="150" width="2" height="30" fill="currentColor" opacity="0.4" />
-                  <rect x="178" y="150" width="2" height="30" fill="currentColor" opacity="0.4" />
-                </svg>
+                <img src="/sans-fond.png" alt="Sergio Ahouangonou" className="w-full h-full object-contain" />
+              
                 {/* Corner accents */}
                 <div className="absolute top-3 left-3 w-8 h-8 border-t-2 border-l-2 border-primary/60" />
                 <div className="absolute bottom-3 right-3 w-8 h-8 border-b-2 border-r-2 border-primary/60" />

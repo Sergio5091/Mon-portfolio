@@ -11,70 +11,27 @@ interface Project {
   stack: string[];
   liveUrl: string;
   githubUrl: string;
-  demo?: string;
+  image?: string;
 }
 
 const projects: Project[] = [
   {
-    title: "WebApp Pro",
-    shortDesc: "Application full stack moderne avec API RESTful et authentification JWT.",
-    fullDesc: "WebApp Pro est une application full stack complète construite avec React et Node.js. Elle propose une gestion d'état avancée via Redux Toolkit, une API RESTful documentée avec Swagger, une authentification JWT sécurisée, ainsi qu'un dashboard analytique en temps réel.",
+    title: "INOVA MAKERS",
+    shortDesc: "Plateforme e-commerce full-stack dédiée à l’ingénierie et aux solutions IoT avec dashboard admin.",
+    fullDesc: "INOVA MAKERS est une application full-stack moderne combinant e-commerce et solutions technologiques innovantes. Elle intègre un système complet de gestion de produits, commandes et utilisateurs, ainsi qu’un dashboard administrateur avec statistiques en temps réel. L’application met l’accent sur la performance, la sécurité et une expérience utilisateur fluide.",
     features: [
-      "Authentification JWT avec refresh tokens",
-      "Dashboard analytique en temps réel",
-      "API RESTful documentée avec Swagger",
-      "Gestion d'état avancée via Redux Toolkit",
-      "Tests unitaires et d'intégration",
+      "Catalogue produits avec recherche et filtres",
+      "Panier dynamique et gestion des commandes",
+      "Authentification sécurisée avec rôles (admin/client)",
+      "Dashboard admin avec analytics et gestion des stocks",
+      "API REST sécurisée avec gestion des utilisateurs",
     ],
-    stack: ["React", "Node.js", "Express", "MongoDB", "Redux", "JWT", "Swagger"],
-    liveUrl: "#",
-    githubUrl: "#",
+    stack: ["Next.js", "Node.js", "Express", "MySQL", "JWT", "TailwindCSS", "TypeScript"],
+    liveUrl: "https://www.inovamakers.io/",
+    githubUrl: "https://github.com/Sergio5091/innova-maker",
+    image: "/inova-maker.png",
   },
-  {
-    title: "E-commerce Dashboard",
-    shortDesc: "Panneau d'administration complet pour la gestion des commandes et produits.",
-    fullDesc: "Un tableau de bord e-commerce complet développé avec Vue.js et Laravel. Il inclut la gestion des commandes, des produits et des utilisateurs, des graphiques analytiques, une gestion des stocks, un système de notification en temps réel et une interface d'administration intuitive.",
-    features: [
-      "Gestion complète des commandes et produits",
-      "Graphiques analytiques avec Chart.js",
-      "Système de notification en temps réel",
-      "Gestion des stocks avec alertes",
-      "Export des données en CSV/PDF",
-    ],
-    stack: ["Vue.js", "Laravel", "Tailwind CSS", "MySQL", "Chart.js", "Redis"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "IoT Monitor",
-    shortDesc: "Surveillance en temps réel de capteurs matériels via WebSockets.",
-    fullDesc: "IoT Monitor est un système de surveillance connectant des capteurs Arduino à un tableau de bord web via WebSockets. Les données de température, humidité et pression sont collectées en temps réel, visualisées en graphiques et déclenchent des alertes automatiques en cas d'anomalie.",
-    features: [
-      "Connexion WebSocket en temps réel",
-      "Visualisation de données multi-capteurs",
-      "Système d'alertes automatiques",
-      "Historique des données persisté",
-      "Interface responsive mobile-first",
-    ],
-    stack: ["Arduino", "Node.js", "WebSockets", "React", "Chart.js", "PostgreSQL"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Portfolio API",
-    shortDesc: "API REST robuste avec validation, Swagger et documentation complète.",
-    fullDesc: "Une API REST robuste et bien documentée construite avec Express et TypeScript. Elle inclut une validation stricte des données via Zod, une documentation interactive Swagger/OpenAPI, un système de logging avec Pino, des tests automatisés et un pipeline CI/CD complet.",
-    features: [
-      "Validation stricte avec Zod",
-      "Documentation Swagger/OpenAPI interactive",
-      "Logging structuré avec Pino",
-      "Tests avec Jest + Supertest",
-      "Pipeline CI/CD via GitHub Actions",
-    ],
-    stack: ["Express", "TypeScript", "PostgreSQL", "Prisma", "Zod", "Jest", "Docker"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
+ 
 ];
 
 function ProjectModal({ project, open, onClose }: { project: Project; open: boolean; onClose: () => void }) {
@@ -143,14 +100,24 @@ function ProjectModal({ project, open, onClose }: { project: Project; open: bool
             </div>
           </div>
 
-          {/* Demo preview placeholder */}
+          {/* Demo preview */}
           <div>
             <h4 className="text-xs font-mono text-primary uppercase tracking-widest mb-3">Aperçu</h4>
-            <div className="rounded-xl overflow-hidden border border-border/60 bg-secondary/40 aspect-video flex items-center justify-center">
-              <div className="flex flex-col items-center gap-3 text-muted-foreground/50">
-                <Monitor className="w-10 h-10" />
-                <span className="text-xs font-mono">Aperçu disponible en live</span>
-              </div>
+            <div className="rounded-xl overflow-hidden border border-border/60 bg-secondary/40 aspect-video">
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={`Aperçu de ${project.title}`}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-3 text-muted-foreground/50">
+                    <Monitor className="w-10 h-10" />
+                    <span className="text-xs font-mono">Aperçu disponible en live</span>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 

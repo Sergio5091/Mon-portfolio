@@ -18,21 +18,22 @@ const formSchema = z.object({
 const contactLinks = [
   {
     icon: Mail,
-    label: "contact@sergio-dev.fr",
-    href: "mailto:contact@sergio-dev.fr",
+    label: "sergioahouangonou693@gmail.com",
+    href: "sergioahouangonou693@gmail.com",
     type: "email",
   },
   {
     icon: Phone,
-    label: "+33 6 XX XX XX XX",
-    href: "tel:+33600000000",
+    label: "+2290160214760",
+    href: "tel:+2290160214760",
     type: "whatsapp",
   },
 ];
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub", color: "hover:text-foreground" },
-  { icon: Linkedin, href: "#", label: "LinkedIn", color: "hover:text-accent" },
+  { icon: Github, href: "https://github.com/Sergio5091", label: "GitHub", color: "hover:text-foreground" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/sergio-ahouangonou/", label: "LinkedIn", color: "hover:text-accent" },
+  
 ];
 
 export default function Contact() {
@@ -172,7 +173,7 @@ export default function Contact() {
                         <FormControl>
                           <Input
                             className="bg-background/60 border-border/60 focus:border-primary transition-all font-sans"
-                            placeholder="jean@example.com"
+                            placeholder="sergio@example.com"
                             type="email"
                             data-testid="input-email"
                             {...field}

@@ -82,41 +82,12 @@ function PhotoAvatar() {
         {/* Subtle grid bg */}
         <div className="absolute inset-0 bg-grid opacity-20" />
 
-        {/* Default avatar SVG — replace src with your photo URL */}
-        <svg
-          viewBox="0 0 200 200"
-          className="w-full h-full"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          {/* Background */}
-          <rect width="200" height="200" fill="hsl(220 18% 10%)" />
-          {/* Head */}
-          <circle cx="100" cy="78" r="38" fill="hsl(220 18% 20%)" />
-          <circle cx="100" cy="78" r="34" fill="hsl(220 15% 25%)" />
-          {/* Face highlight */}
-          <ellipse cx="100" cy="70" rx="20" ry="16" fill="hsl(220 15% 32%)" />
-          {/* Body */}
-          <ellipse cx="100" cy="175" rx="55" ry="40" fill="hsl(220 18% 20%)" />
-          <ellipse cx="100" cy="175" rx="48" ry="35" fill="hsl(220 15% 26%)" />
-          {/* Shirt accent — primary color */}
-          <path d="M55 180 Q100 155 145 180 L145 210 L55 210 Z" fill="hsl(199 89% 35% / 0.6)" />
-          {/* Glasses */}
-          <rect x="78" y="72" width="18" height="12" rx="4" stroke="hsl(199 89% 48%)" strokeWidth="2" fill="none" />
-          <rect x="104" y="72" width="18" height="12" rx="4" stroke="hsl(199 89% 48%)" strokeWidth="2" fill="none" />
-          <line x1="96" y1="78" x2="104" y2="78" stroke="hsl(199 89% 48%)" strokeWidth="2" />
-          {/* Code symbol */}
-          <text x="82" y="147" fontSize="12" fontFamily="monospace" fill="hsl(199 89% 55%)" opacity="0.8">&lt;/&gt;</text>
-          {/* Corner tech marks */}
-          <rect x="8" y="8" width="20" height="2" fill="hsl(199 89% 48%)" opacity="0.5" />
-          <rect x="8" y="8" width="2" height="20" fill="hsl(199 89% 48%)" opacity="0.5" />
-          <rect x="172" y="8" width="20" height="2" fill="hsl(199 89% 48%)" opacity="0.5" />
-          <rect x="190" y="8" width="2" height="20" fill="hsl(199 89% 48%)" opacity="0.5" />
-          <rect x="8" y="190" width="20" height="2" fill="hsl(199 89% 48%)" opacity="0.5" />
-          <rect x="8" y="172" width="2" height="20" fill="hsl(199 89% 48%)" opacity="0.5" />
-          <rect x="172" y="190" width="20" height="2" fill="hsl(199 89% 48%)" opacity="0.5" />
-          <rect x="190" y="172" width="2" height="20" fill="hsl(199 89% 48%)" opacity="0.5" />
-        </svg>
+        {/* Photo */}
+        <img
+          src="/avec-fond.jpg"
+          alt="Sergio Ahouangonou"
+          className="w-full h-full object-cover"
+        />
 
         {/* Hover overlay — color shift */}
         <motion.div
@@ -129,17 +100,6 @@ function PhotoAvatar() {
           transition={{ duration: 0.5 }}
         />
 
-        {/* Camera icon overlay hint */}
-        <motion.div
-          className="absolute inset-0 flex items-center justify-center rounded-full bg-black/40 backdrop-blur-sm"
-          animate={{ opacity: hovered ? 1 : 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          <div className="flex flex-col items-center gap-1 text-white">
-            <Camera className="w-8 h-8" />
-            <span className="text-xs font-mono opacity-80">Votre photo</span>
-          </div>
-        </motion.div>
       </motion.div>
 
       {/* Status badge */}

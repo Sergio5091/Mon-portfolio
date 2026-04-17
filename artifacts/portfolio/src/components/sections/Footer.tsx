@@ -45,7 +45,7 @@ export default function Footer() {
         {/* Right: social + back to top */}
         <div className="flex items-center gap-3">
           <motion.a
-            href="#"
+            href="https://github.com/Sergio5091"
             whileHover={{ scale: 1.12, y: -2 }}
             className="p-2.5 rounded-lg bg-secondary/40 border border-border/50 text-muted-foreground hover:text-foreground hover:border-border transition-all"
             aria-label="GitHub"
@@ -54,7 +54,7 @@ export default function Footer() {
             <Github className="w-4 h-4" />
           </motion.a>
           <motion.a
-            href="#"
+            href="https://www.linkedin.com/in/sergio-ahouangonou/"
             whileHover={{ scale: 1.12, y: -2 }}
             className="p-2.5 rounded-lg bg-secondary/40 border border-border/50 text-muted-foreground hover:text-accent hover:border-accent/30 transition-all"
             aria-label="LinkedIn"
