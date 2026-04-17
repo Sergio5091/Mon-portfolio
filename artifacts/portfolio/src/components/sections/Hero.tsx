@@ -84,9 +84,9 @@ function PhotoAvatar() {
 
         {/* Photo */}
         <img
-          src="/avec-fond.jpg"
+          src="/sans-fond.png"
           alt="Sergio Ahouangonou"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
 
         {/* Hover overlay — color shift */}

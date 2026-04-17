@@ -16,13 +16,18 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
 
-    // 🔥 optionnel mais recommandé pour Vercel
+    // 🔥 IMPORTANT : supprime tes warnings sourcemap
     sourcemap: false,
 
+    // 🚀 optimisation bundle (réduit ton gros JS de 596KB)
     rollupOptions: {
       output: {
-        manualChunks: {
-          react: ["react", "react-dom"],
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("react")) return "react-vendor";
+            if (id.includes("framer-motion")) return "motion";
+            return "vendor";
+          }
         },
       },
     },
