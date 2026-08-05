@@ -3,10 +3,10 @@ import { Code2, Cpu, Zap, BookOpen } from "lucide-react";
 import { useRef } from "react";
 
 const stats = [
-  { label: "Projets réalisés", value: "10+" },
-  { label: "Technologies maîtrisées", value: "15+" },
-  { label: "Mois d'alternance", value: "5+" },
-  { label: "Commits GitHub", value: "400+" },
+  { label: "Projets réalisés", value: "12" },
+  { label: "Technologies maîtrisées", value: "18" },
+  { label: "Alternant depuis", value: "2025" },
+  { label: "Commits GitHub", value: "500+" },
 ];
 
 function TiltCard({ children, className }: { children: React.ReactNode; className?: string }) {
@@ -72,8 +72,8 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-muted-foreground leading-relaxed text-base">
-              Je suis développeur web passionné par la créatin des applications {" "}
-              <span className="text-primary font-mono font-semibold"> modernes, performantes et intuitives</span>.
+              Je suis développeur web passionné par la création{" "}
+              <span className="text-primary font-mono font-semibold">d'applications modernes, performantes et intuitives</span>.
             </p>
             <p className="text-muted-foreground leading-relaxed text-base">
               Mon parcours en{" "}
@@ -81,7 +81,7 @@ export default function About() {
               m'a permis de développer une forte capacité d'analyse et une compréhension des systèmes techniques, que j'applique aujourd'hui dans le développement logiciel.
             </p>
             <p className="text-muted-foreground leading-relaxed text-base">
-              Actuellement en alternance, je continue de renforcer mes compétences et de travailler sur des projets concrets, comblant le fossé entre le matériel et le logiciel.
+              Actuellement en alternance, je continue de renforcer mes compétences et de travailler sur des projets concrets, faisant le pont entre les systèmes embarqués et le développement web.
             </p>
 
             {/* Icon badges */}
@@ -93,10 +93,10 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               {[
-                { icon: <Code2 className="w-4 h-4" />, label: "Web Dev" },
-                { icon: <Cpu className="w-4 h-4" />, label: "Technologies" },
+                { icon: <Code2 className="w-4 h-4" />, label: "Développement web" },
+                { icon: <Cpu className="w-4 h-4" />, label: "Systèmes embarqués" },
                 { icon: <Zap className="w-4 h-4" />, label: "Performance" },
-                { icon: <BookOpen className="w-4 h-4" />, label: "En alternance..." },
+                { icon: <BookOpen className="w-4 h-4" />, label: "En alternance" },
               ].map((item, i) => (
                 <motion.div
                   key={i}

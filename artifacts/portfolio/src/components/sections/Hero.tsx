@@ -109,7 +109,7 @@ function PhotoAvatar() {
         transition={{ type: "spring", stiffness: 300 }}
       >
         <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-        Disponible
+        Disponible pour des missions freelance
       </motion.div>
     </motion.div>
   );
@@ -229,7 +229,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.25 }}
               className="text-base md:text-xl text-muted-foreground font-mono mb-8 tracking-widest uppercase"
             >
-              Développeur Web Full Stack
+              Développeur Full Stack · React · Next.js · Node.js
             </motion.h2>
 
             {/* Typewriter */}
@@ -256,7 +256,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.55 }}
               className="text-sm text-muted-foreground max-w-md mb-10 border-l-2 border-primary pl-4"
             >
-              Profil technique avec une base en systèmes électroniques et embarqués.
+              Je développe des applications web rapides, évolutives et intuitives, avec une approche inspirée de l'ingénierie des systèmes embarqués.
             </motion.p>
 
             {/* Buttons */}
@@ -316,7 +316,7 @@ export default function Hero() {
           transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
           className="flex flex-col items-center gap-1 text-muted-foreground/40"
         >
-          <span className="text-xs font-mono tracking-widest">SCROLL</span>
+          <span className="text-xs font-mono tracking-widest">DÉFILER</span>
           <ChevronDown className="w-4 h-4" />
         </motion.div>
       </motion.div>
