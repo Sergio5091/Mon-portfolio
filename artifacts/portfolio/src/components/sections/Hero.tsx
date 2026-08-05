@@ -104,12 +104,13 @@ function PhotoAvatar() {
 
       {/* Status badge */}
       <motion.div
-        className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-2 px-4 py-1.5 rounded-full bg-background border border-border shadow-lg text-xs font-mono text-muted-foreground whitespace-nowrap"
+        className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-background border border-border shadow-lg font-mono text-muted-foreground text-[11px]"
+        style={{ whiteSpace: "nowrap" }}
         animate={{ y: hovered ? -4 : 0 }}
         transition={{ type: "spring", stiffness: 300 }}
       >
-        <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-        Disponible pour des missions freelance
+        <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse shrink-0" />
+        Disponible · freelance
       </motion.div>
     </motion.div>
   );
