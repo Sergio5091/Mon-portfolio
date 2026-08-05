@@ -503,7 +503,7 @@ export default function Projects() {
           className="flex items-center gap-4 mb-16"
         >
           <div className="h-px flex-1 bg-gradient-to-r from-transparent to-border/50" />
-          <h2 className="text-3xl md:text-4xl font-black text-foreground whitespace-nowrap">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-foreground whitespace-nowrap">
             <span className="text-primary">03.</span> Projets Récents
           </h2>
         </motion.div>
